@@ -1,0 +1,142 @@
+[
+  {
+    "cliente_id": 1001,
+    "numero_conta": "58248036-1",
+    "tipo_cartao": "Débito",
+    "data_solicitacao_bloqueio": "2026-01-21",
+    "motivo_bloqueio": "Roubo ou furto",
+    "status_bloqueio": "Bloqueado",
+    "canal_solicitacao": "Agência",
+    "segunda_via_cartao_solicitada": true
+  },
+  {
+    "cliente_id": 1004,
+    "numero_conta": "47083312-1",
+    "tipo_cartao": "Débito",
+    "data_solicitacao_bloqueio": "2026-01-17",
+    "motivo_bloqueio": "Roubo ou furto",
+    "status_bloqueio": "Solicitado",
+    "canal_solicitacao": "Central Telefônica",
+    "segunda_via_cartao_solicitada": true
+  },
+  {
+    "cliente_id": 1005,
+    "numero_conta": "16148459-5",
+    "tipo_cartao": "Crédito",
+    "data_solicitacao_bloqueio": "2026-01-18",
+    "motivo_bloqueio": "Suspeita de fraude",
+    "status_bloqueio": "Em processamento",
+    "canal_solicitacao": "Central Telefônica",
+    "segunda_via_cartao_solicitada": true
+  },
+  {
+    "cliente_id": 1006,
+    "numero_conta": "99447152-9",
+    "tipo_cartao": "Múltiplo",
+    "data_solicitacao_bloqueio": "2026-01-16",
+    "motivo_bloqueio": "Solicitação do cliente",
+    "status_bloqueio": "Bloqueado",
+    "canal_solicitacao": "App",
+    "segunda_via_cartao_solicitada": false
+  },
+  {
+    "cliente_id": 1011,
+    "numero_conta": "77434354-9",
+    "tipo_cartao": "Crédito",
+    "data_solicitacao_bloqueio": "2026-01-25",
+    "motivo_bloqueio": "Solicitação do cliente",
+    "status_bloqueio": "Bloqueado",
+    "canal_solicitacao": "Internet Banking",
+    "segunda_via_cartao_solicitada": false
+  },
+  {
+    "cliente_id": 1014,
+    "numero_conta": "72549446-5",
+    "tipo_cartao": "Crédito",
+    "data_solicitacao_bloqueio": "2026-01-14",
+    "motivo_bloqueio": "Roubo ou furto",
+    "status_bloqueio": "Reemitido",
+    "canal_solicitacao": "Agência",
+    "segunda_via_cartao_solicitada": false
+  },
+  {
+    "cliente_id": 1015,
+    "numero_conta": "33493673-7",
+    "tipo_cartao": "Múltiplo",
+    "data_solicitacao_bloqueio": "2026-01-24",
+    "motivo_bloqueio": "Solicitação do cliente",
+    "status_bloqueio": "Solicitado",
+    "canal_solicitacao": "Agência",
+    "segunda_via_cartao_solicitada": true
+  },
+  {
+    "cliente_id": 1017,
+    "numero_conta": "29416882-3",
+    "tipo_cartao": "Crédito",
+    "data_solicitacao_bloqueio": "2026-01-20",
+    "motivo_bloqueio": "Solicitação do cliente",
+    "status_bloqueio": "Reemitido",
+    "canal_solicitacao": "Internet Banking",
+    "segunda_via_cartao_solicitada": false
+  },
+  {
+    "cliente_id": 1019,
+    "numero_conta": "35850594-5",
+    "tipo_cartao": "Débito",
+    "data_solicitacao_bloqueio": "2026-02-04",
+    "motivo_bloqueio": "Perda do cartão",
+    "status_bloqueio": "Reemitido",
+    "canal_solicitacao": "Central Telefônica",
+    "segunda_via_cartao_solicitada": false
+  },
+  {
+    "cliente_id": 1022,
+    "numero_conta": "62899666-1",
+    "tipo_cartao": "Débito",
+    "data_solicitacao_bloqueio": "2026-02-01",
+    "motivo_bloqueio": "Roubo ou furto",
+    "status_bloqueio": "Solicitado",
+    "canal_solicitacao": "App",
+    "segunda_via_cartao_solicitada": true
+  },
+  {
+    "cliente_id": 1025,
+    "numero_conta": "40685201-9",
+    "tipo_cartao": "Crédito",
+    "data_solicitacao_bloqueio": "2026-02-10",
+    "motivo_bloqueio": "Suspeita de fraude",
+    "status_bloqueio": "Solicitado",
+    "canal_solicitacao": "App",
+    "segunda_via_cartao_solicitada": true
+  },
+  {
+    "cliente_id": 1027,
+    "numero_conta": "65662246-1",
+    "tipo_cartao": "Crédito",
+    "data_solicitacao_bloqueio": "2026-01-29",
+    "motivo_bloqueio": "Solicitação do cliente",
+    "status_bloqueio": "Em processamento",
+    "canal_solicitacao": "Central Telefônica",
+    "segunda_via_cartao_solicitada": true
+  },
+  {
+    "cliente_id": 1028,
+    "numero_conta": "69706377-9",
+    "tipo_cartao": "Crédito",
+    "data_solicitacao_bloqueio": "2026-01-18",
+    "motivo_bloqueio": "Suspeita de fraude",
+    "status_bloqueio": "Em processamento",
+    "canal_solicitacao": "Agência",
+    "segunda_via_cartao_solicitada": true
+  },
+  {
+    "cliente_id": 1030,
+    "numero_conta": "49753080-9",
+    "tipo_cartao": "Débito",
+    "data_solicitacao_bloqueio": "2026-01-29",
+    "motivo_bloqueio": "Roubo ou furto",
+    "status_bloqueio": "Bloqueado",
+    "canal_solicitacao": "Central Telefônica",
+    "segunda_via_cartao_solicitada": false
+  }
+]
