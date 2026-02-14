@@ -19,7 +19,7 @@
 
 > Você modificou ou expandiu os dados mockados? Descreva aqui.
 
-[Houve uma mudança importante no foco e na finalidade dos dados utilizados pelo agente. Antes, a estrutura era mais voltada para análise de perfil financeiro e apoio a decisões de investimento, indicando um agente com atuação mais consultiva e estratégica. Com a atualização, o conjunto de dados passou a priorizar informações operacionais do dia a dia bancário, direcionando o agente para um papel mais prático de atendimento ao cliente.]
+Houve uma mudança importante no foco e na finalidade dos dados utilizados pelo agente. Antes, a estrutura era mais voltada para análise de perfil financeiro e apoio a decisões de investimento, indicando um agente com atuação mais consultiva e estratégica. Com a atualização, o conjunto de dados passou a priorizar informações operacionais do dia a dia bancário, direcionando o agente para um papel mais prático de atendimento ao cliente.
 
 ---
 
@@ -28,7 +28,42 @@
 ### Como os dados são carregados?
 > Descreva como seu agente acessa a base de conhecimento.
 
-[ex: Os JSON/CSV são carregados no início da sessão e incluídos no contexto do prompt]
+```import json
+import pandas as pd
+
+# --- Carregamento dos arquivos JSON ---
+
+with open("bloqueio_cartoes.json", "r", encoding="utf-8") as f:
+    bloqueio_cartoes = json.load(f)
+
+with open("emprestimos.json", "r", encoding="utf-8") as f:
+    emprestimos = json.load(f)
+
+# --- Carregamento dos arquivos CSV ---
+
+extrato_bancario = pd.read_csv("extrato_bancario.csv")
+limites_cartoes = pd.read_csv("limites_cartoes.csv")
+saldos_bancarios = pd.read_csv("saldos_bancarios.csv")
+
+# --- Exemplo de uso pelo agente virtual ---
+
+print("Dados carregados com sucesso!\n")
+
+print("Bloqueio de cartões:")
+print(bloqueio_cartoes)
+
+print("\nEmpréstimos:")
+print(emprestimos)
+
+print("\nExtrato bancário (primeiras linhas):")
+print(extrato_bancario.head())
+
+print("\nLimites de cartões (primeiras linhas):")
+print(limites_cartoes.head())
+
+print("\nSaldos bancários (primeiras linhas):")
+print(saldos_bancarios.head())
+``` 
 
 ### Como os dados são usados no prompt?
 > Os dados vão no system prompt? São consultados dinamicamente?
