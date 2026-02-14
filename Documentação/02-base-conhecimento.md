@@ -146,30 +146,30 @@ SEGUNDA VIA DE BOLETO (Dados/segunda_via_boletos.json)
 ```
 Dados do Cliente para o Agente
 
-Bloqueio
-Status do cartão: Ativo
-Possui bloqueio: Não
-Última verificação: 10/11/2025
+BLOQUEIO
+-Status do cartão: Ativo
+-Possui bloqueio: Não
+-Última verificação: 10/11/2025
 
-Empréstimos
-Quantidade de contratos: 1
-Parcela mensal: R$ 320
-Próximo vencimento: 15/11/2025
-Situação: Em dia
+EMPRÉSTIMO
+-Quantidade de contratos: 1
+-Parcela mensal: R$ 320
+-Próximo vencimento: 15/11/2025
+-Situação: Em dia
 
-Extrato Bancário
-Total de transações no período: 12
-Última movimentação: 03/11/2025
-Tipo da última movimentação: Débito
+EXTRATO BANCÁRIO
+-Total de transações no período: 12
+-Última movimentação: 03/11/2025
+-Tipo da última movimentação: Débito
 
-Limites Cartões
-Limite total: R$ 8.000
-Limite utilizado: R$ 2.800
-Limite disponível: R$ 5.200
+LIMLITES CARTÕES
+-Limite total: R$ 8.000
+-Limite utilizado: R$ 2.800
+-Limite disponível: R$ 5.200
 
-Saldos Bancários
-Saldo em conta corrente: R$ 5.000
-Saldo em poupança: R$ 1.500
-Saldo total: R$ 6.500
+SALDOS BANCÁRIOS
+-Saldo em conta corrente: R$ 5.000
+-Saldo em poupança: R$ 1.500
+-Saldo total: R$ 6.500
 ...
 ```
