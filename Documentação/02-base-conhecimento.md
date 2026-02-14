@@ -70,8 +70,7 @@ print(saldos_bancarios.head())
 
 ```text
 Bloqueio de cartão
-[
-  {
+{
     "cliente_id": 1001,
     "numero_conta": "58248036-1",
     "tipo_cartao": "Débito",
@@ -81,9 +80,22 @@ Bloqueio de cartão
     "canal_solicitacao": "Agência",
     "segunda_via_cartao_solicitada": true
   } 
-]
 
 Empréstimo
+ {
+    "cliente_id": 1001,
+    "numero_conta": "58248036-1",
+    "tipo_emprestimo": "Imobiliário",
+    "valor_total": 32246.49,
+    "taxa_juros_mensal_percentual": 2.14,
+    "quantidade_parcelas": 36,
+    "parcelas_pagas": 13,
+    "valor_parcela": 914.9,
+    "saldo_devedor": 20352.79,
+    "status_emprestimo": "Em análise",
+    "data_inicio": "2025-11-05",
+    "proxima_parcela": "2026-12-30"
+  }
 
 Extrato bancário
 
