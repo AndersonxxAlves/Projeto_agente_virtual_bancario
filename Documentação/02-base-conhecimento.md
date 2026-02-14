@@ -105,6 +105,7 @@ Extrato bancário
 1001,58248036-1,2026-01-19,Crédito,Depósito,4542.53
 1001,58248036-1,2026-01-20,Crédito,Depósito,2682.97
 1001,58248036-1,2026-02-01,Crédito,Depósito,3444.68
+> [!TIP]
 
 
 Limite do cartão
