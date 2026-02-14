@@ -69,7 +69,7 @@ print(saldos_bancarios.head())
 > Os dados vão no system prompt? São consultados dinamicamente?
 
 ```text
-Bloqueio de cartão
+BLOQUEIO DE CARTÃO
 {
     "cliente_id": 1001,
     "numero_conta": "58248036-1",
@@ -81,7 +81,7 @@ Bloqueio de cartão
     "segunda_via_cartao_solicitada": true
   } 
 
-Empréstimo
+EMPRÉSTIMO
  {
     "cliente_id": 1001,
     "numero_conta": "58248036-1",
@@ -98,7 +98,7 @@ Empréstimo
   }
 
   
-Extrato bancário
+EXTRATO BANCÁRIO
 | cliente_id | numero_conta | data_movimento | tipo_movimento |  descricao   |  valor  |
 |------------|--------------|----------------|----------------|--------------|---------|
 |    1001    |   58248036-1 |   2026-01-15   |     Débito     |     Saque    | 958.49  |
@@ -108,18 +108,18 @@ Extrato bancário
 |    1001    |   58248036-1 |   2026-02-01   |     Crédito    |   Depósito   | 3444.68 |
 
 
-Limite do cartão
+LIMITE DE CARTÃO
 | cliente_id| numero_conta | limite_total | credito_utilizado | credito_disponivel | debito_diario | status_cartao |
 |-----------|--------------|--------------|-------------------|--------------------|---------------|---------------|
 |   1001    |  58248036-1  |   15800.56   |      7530.47      |       8270.09      |    1369.81    |   Em análise  |
 
 
-Saldo bancário
+SALDO BANCÁRIO
 | cliente_id | nome_cliente |    cpf     | agencia | numero_conta | tipo_conta | saldo | status_conta | data_atualizacao |
 |------------|--------------|------------|---------|--------------|------------|-------|--------------|------------------|
 |    1001    | João Pereira |466.273.789-65|  5316 |  58248036-1  |Conta Corrente|5727.63| Bloqueada  |    2026-02-06    |
 
-Segunda via de boleto
+SEGUNDA VIA DE BOLETO
 {
     "cliente_id": 1001,
     "numero_conta": "58248036-1",
