@@ -69,7 +69,7 @@ print(saldos_bancarios.head())
 > Os dados vão no system prompt? São consultados dinamicamente?
 
 ```text
-BLOQUEIO DE CARTÃO
+BLOQUEIO DE CARTÃO (Dados/bloqueio_cartoes.json) 
 {
     "cliente_id": 1001,
     "numero_conta": "58248036-1",
@@ -81,7 +81,7 @@ BLOQUEIO DE CARTÃO
     "segunda_via_cartao_solicitada": true
   } 
 
-EMPRÉSTIMO
+EMPRÉSTIMO (Dados/emprestimos.json)
  {
     "cliente_id": 1001,
     "numero_conta": "58248036-1",
@@ -98,7 +98,8 @@ EMPRÉSTIMO
   }
 
   
-EXTRATO BANCÁRIO
+EXTRATO BANCÁRIO (Dados/extrato_bancario.csv)
+
 | cliente_id | numero_conta | data_movimento | tipo_movimento |  descricao   |  valor  |
 |------------|--------------|----------------|----------------|--------------|---------|
 |    1001    |   58248036-1 |   2026-01-15   |     Débito     |     Saque    | 958.49  |
@@ -108,18 +109,20 @@ EXTRATO BANCÁRIO
 |    1001    |   58248036-1 |   2026-02-01   |     Crédito    |   Depósito   | 3444.68 |
 
 
-LIMITE DE CARTÃO
+LIMITE DE CARTÃO (Dados/limites_catoes.csv)
+
 | cliente_id| numero_conta | limite_total | credito_utilizado | credito_disponivel | debito_diario | status_cartao |
 |-----------|--------------|--------------|-------------------|--------------------|---------------|---------------|
 |   1001    |  58248036-1  |   15800.56   |      7530.47      |       8270.09      |    1369.81    |   Em análise  |
 
 
-SALDO BANCÁRIO
+SALDO BANCÁRIO (Dados/saldos_bancarios.csv)
+
 | cliente_id | nome_cliente |    cpf     | agencia | numero_conta | tipo_conta | saldo | status_conta | data_atualizacao |
 |------------|--------------|------------|---------|--------------|------------|-------|--------------|------------------|
 |    1001    | João Pereira |466.273.789-65|  5316 |  58248036-1  |Conta Corrente|5727.63| Bloqueada  |    2026-02-06    |
 
-SEGUNDA VIA DE BOLETO
+SEGUNDA VIA DE BOLETO (Dados/segunda_via_boletos.json
 {
     "cliente_id": 1001,
     "numero_conta": "58248036-1",
