@@ -26,7 +26,7 @@ Houve uma mudança importante no foco e na finalidade dos dados utilizados pelo 
 ## Estratégia de Integração
 
 ### Como os dados são carregados?
-> O agente virtual inicia seu funcionamento carregando as informações necessárias a partir dos arquivos de dados do sistema. Primeiro, ele lê os arquivos no formato JSON para obter informações estruturadas, como status de cartões e dados de empréstimos. Em seguida, ele carrega os arquivos CSV, que contêm tabelas como extratos, limites e saldos bancários.
+O agente virtual inicia seu funcionamento carregando as informações necessárias a partir dos arquivos de dados do sistema. Primeiro, ele lê os arquivos no formato JSON para obter informações estruturadas, como status de cartões e dados de empréstimos. Em seguida, ele carrega os arquivos CSV, que contêm tabelas como extratos, limites e saldos bancários.
 
 ```import json
 import pandas as pd
@@ -69,7 +69,7 @@ print(saldos_bancarios.head())
 > Os dados vão no system prompt? São consultados dinamicamente?
 
 
-´´´text
+´´´
 Bloqueio de cartão
 {
     "cliente_id": 1001,
@@ -121,7 +121,7 @@ Segunda via de boleto
 
 
 
-```
+
 
 ## Exemplo de Contexto Montado
 
