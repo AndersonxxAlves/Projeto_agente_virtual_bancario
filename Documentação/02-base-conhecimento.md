@@ -68,6 +68,8 @@ print(saldos_bancarios.head())
 ### Como os dados são usados no prompt?
 > Os dados vão no system prompt? São consultados dinamicamente?
 
+Os dados não devem ficar fixos no system prompt. Eles devem ser consultados dinamicamente e só então inseridos no prompt quando necessário.O agente utiliza os dados para enriquecer a resposta ao usuário no momento da pergunta. Quando o cliente faz uma solicitação.
+
 ```text
 BLOQUEIO DE CARTÃO (Dados/bloqueio_cartoes.json) 
 {
