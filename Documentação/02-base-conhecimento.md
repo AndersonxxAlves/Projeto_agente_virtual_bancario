@@ -26,7 +26,6 @@ Houve uma mudança importante no foco e na finalidade dos dados utilizados pelo 
 ## Estratégia de Integração
 
 ### Como os dados são carregados?
-> Descreva como seu agente acessa a base de conhecimento.
 > O agente virtual inicia seu funcionamento carregando as informações necessárias a partir dos arquivos de dados do sistema. Primeiro, ele lê os arquivos no formato JSON para obter informações estruturadas, como status de cartões e dados de empréstimos. Em seguida, ele carrega os arquivos CSV, que contêm tabelas como extratos, limites e saldos bancários.
 
 ```import json
