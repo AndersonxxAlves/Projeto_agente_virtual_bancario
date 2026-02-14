@@ -118,6 +118,17 @@ cliente_id,nome_cliente,cpf,agencia,numero_conta,tipo_conta,saldo,status_conta,d
 1001,João Pereira,466.273.789-65,5316,58248036-1,Conta Corrente,5727.63,Bloqueada,2026-02-06
 
 Segunda via de boleto
+{
+    "cliente_id": 1001,
+    "numero_conta": "58248036-1",
+    "id_boleto": "BOL532287",
+    "valor_boleto": 725.95,
+    "data_vencimento": "2026-01-28",
+    "data_solicitacao_segunda_via": "2026-01-18",
+    "motivo_solicitacao": "Atualização de vencimento",
+    "status_boleto": "Pago",
+    "canal_solicitacao": "App"
+  },
 
 
 
