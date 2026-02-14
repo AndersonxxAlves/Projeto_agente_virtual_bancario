@@ -68,7 +68,20 @@ print(saldos_bancarios.head())
 ### Como os dados são usados no prompt?
 > Os dados vão no system prompt? São consultados dinamicamente?
 
-[Sua descrição aqui]
+```text
+Bloqueio de cartão
+
+Empréstimo
+
+Extrato bancário
+
+Limite do cartão
+
+Saldo bancário
+
+Segunda via de boleto
+
+
 
 ---
 
