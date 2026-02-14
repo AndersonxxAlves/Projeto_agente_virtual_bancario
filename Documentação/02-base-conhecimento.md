@@ -19,7 +19,7 @@
 
 > Você modificou ou expandiu os dados mockados? Descreva aqui.
 
-[Sua descrição aqui]
+[Houve uma mudança importante no foco e na finalidade dos dados utilizados pelo agente. Antes, a estrutura era mais voltada para análise de perfil financeiro e apoio a decisões de investimento, indicando um agente com atuação mais consultiva e estratégica. Com a atualização, o conjunto de dados passou a priorizar informações operacionais do dia a dia bancário, direcionando o agente para um papel mais prático de atendimento ao cliente.]
 
 ---
 
