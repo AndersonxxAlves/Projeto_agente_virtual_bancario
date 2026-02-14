@@ -68,7 +68,6 @@ print(saldos_bancarios.head())
 ### Como os dados são usados no prompt?
 > Os dados vão no system prompt? São consultados dinamicamente?
 
-```text
 Bloqueio de cartão
 {
     "cliente_id": 1001,
@@ -97,6 +96,7 @@ Empréstimo
     "proxima_parcela": "2026-12-30"
   }
 
+  
 Extrato bancário
 | cliente_id | numero_conta | data_movimento | tipo_movimento | descricao | valor |
 |------------|--------------|----------------|----------------|-----------|-------|
@@ -107,22 +107,16 @@ Extrato bancário
 |1001,58248036-1,2026-02-01,Crédito,Depósito,3444.68
 
 
-
----
-
-
 Limite do cartão
 cliente_id,numero_conta,cartao_credito_limite_total,cartao_credito_utilizado,cartao_credito_disponivel,limite_debito_diario,status_cartao
 1001,58248036-1,15800.56,7530.47,8270.09,1369.81,Em análise
 
 Saldo bancário
+cliente_id,nome_cliente,cpf,agencia,numero_conta,tipo_conta,saldo,status_conta,data_atualizacao
+1001,João Pereira,466.273.789-65,5316,58248036-1,Conta Corrente,5727.63,Bloqueada,2026-02-06
 
 Segunda via de boleto
 
-
-
----
-```
 
 ## Exemplo de Contexto Montado
 
