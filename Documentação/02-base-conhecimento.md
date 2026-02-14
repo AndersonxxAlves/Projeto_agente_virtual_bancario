@@ -98,6 +98,8 @@ Empréstimo
   }
 
 Extrato bancário
+cliente_id,numero_conta,data_movimento,tipo_movimento,descricao,valor
+
 
 Limite do cartão
 
