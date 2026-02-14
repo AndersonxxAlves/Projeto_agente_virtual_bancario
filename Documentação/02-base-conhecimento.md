@@ -2,16 +2,16 @@
 
 ## Dados Utilizados
 
-| Arquivo | Formato | Utilização no Agente |
+| Arquivo | Formato | Estrutura de trabalho do agente |
 |---------|---------|---------------------|
-| `bloqueio_cartoes.json` | JSON | Contextualizar interações anteriores |
-| `emprestimos.json` | JSON | Personalizar recomendações |
-| `extrato_bancario.csv` | CSV | Sugerir produtos adequados ao perfil |
-| `limites_cartoes.csv` | CSV | Analisar padrão de gastos do cliente |
+| `bloqueio_cartoes.json` | JSON | Após a autenticação do cliente, o sistema realiza o bloqueio do cartão solicitado, impedindo novas transações por segurança. Em seguida, são exibidas informações como status do cartão, motivo do bloqueio e orientações para os próximos passos, como solicitação de segunda via ou possibilidade de desbloqueio. Essa ação ajuda a proteger o cliente contra usos indevidos e possíveis prejuízos financeiros. |
+| `emprestimos.json` | JSON | O cliente acessa o agente e solicita uma simulação de empréstimo. |
+| `extrato_bancario.csv` | CSV | Através do agente o cliente pode consultar o extrato da sua conta |
+| `limites_cartoes.csv` | CSV | Após a autenticação do cliente, o sistema exibe informações como limite total, limite disponível, valor já utilizado e, no caso do débito, o saldo da conta vinculada. Essa verificação ajuda o cliente a planejar melhor seus gastos e evitar recusas em transações. |
 | `segunda_via_boletos.json` | JSON |
 | `saldos_bancarios.csv` | CSV |
 > [!TIP]
-> **Quer um dataset mais robusto?** Você pode utilizar datasets públicos do [Hugging Face](https://huggingface.co/datasets) relacionados a finanças, desde que sejam adequados ao contexto do desafio.
+
 
 ---
 
