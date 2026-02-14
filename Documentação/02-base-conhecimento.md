@@ -98,7 +98,7 @@ Empréstimo
   }
 
 Extrato bancário
-cliente_id,numero_conta,data_movimento,tipo_movimento,descricao,valor
+| cliente_id | numero_conta | data_movimento | tipo_movimento | descricao | valor |
 1001,58248036-1,2026-01-15,Débito,Saque,958.49
 1001,58248036-1,2026-01-16,Crédito,TED Recebida,2428.09
 1001,58248036-1,2026-01-19,Crédito,Depósito,4542.53
