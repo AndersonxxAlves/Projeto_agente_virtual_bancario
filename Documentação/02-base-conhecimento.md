@@ -108,6 +108,9 @@ Extrato bancário
 > [!TIP]
 
 
+---
+
+
 Limite do cartão
 
 Saldo bancário
