@@ -144,13 +144,32 @@ SEGUNDA VIA DE BOLETO (Dados/segunda_via_boletos.json)
 > Mostre um exemplo de como os dados são formatados para o agente.
 
 ```
-Dados do Cliente:
-- Nome: João Silva
-- Perfil: Moderado
-- Saldo disponível: R$ 5.000
+Dados do Cliente para o Agente
 
-Últimas transações:
-- 01/11: Supermercado - R$ 450
-- 03/11: Streaming - R$ 55
+Bloqueio
+Status do cartão: Ativo
+Possui bloqueio: Não
+Última verificação: 10/11/2025
+
+Empréstimos
+Quantidade de contratos: 1
+Parcela mensal: R$ 320
+Próximo vencimento: 15/11/2025
+Situação: Em dia
+
+Extrato Bancário
+Total de transações no período: 12
+Última movimentação: 03/11/2025
+Tipo da última movimentação: Débito
+
+Limites Cartões
+Limite total: R$ 8.000
+Limite utilizado: R$ 2.800
+Limite disponível: R$ 5.200
+
+Saldos Bancários
+Saldo em conta corrente: R$ 5.000
+Saldo em poupança: R$ 1.500
+Saldo total: R$ 6.500
 ...
 ```
