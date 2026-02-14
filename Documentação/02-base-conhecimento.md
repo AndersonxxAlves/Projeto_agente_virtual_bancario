@@ -67,6 +67,8 @@ print(saldos_bancarios.head())
 
 ### Como os dados são usados no prompt?
 > Os dados vão no system prompt? São consultados dinamicamente?
+
+
 ´´´text
 Bloqueio de cartão
 {
@@ -119,7 +121,6 @@ Segunda via de boleto
 
 
 
-```
 ```
 
 ## Exemplo de Contexto Montado
