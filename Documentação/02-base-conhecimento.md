@@ -99,13 +99,13 @@ Empréstimo
 
   
 Extrato bancário
-| cliente_id | numero_conta | data_movimento | tipo_movimento | descricao | valor |
-|------------|--------------|----------------|----------------|-----------|-------|
-|    1001    |   58248036-1 |   2026-01-15   |     Débito     |   Saque   | 958.49|
-|1001,58248036-1,2026-01-16,Crédito,TED Recebida,2428.09
-|1001,58248036-1,2026-01-19,Crédito,Depósito,4542.53
-|1001,58248036-1,2026-01-20,Crédito,Depósito,2682.97
-|1001,58248036-1,2026-02-01,Crédito,Depósito,3444.68
+| cliente_id | numero_conta | data_movimento | tipo_movimento |  descricao   |  valor  |
+|------------|--------------|----------------|----------------|--------------|---------|
+|    1001    |   58248036-1 |   2026-01-15   |     Débito     |     Saque    | 958.49  |
+|    1001    |   58248036-1 |   2026-01-16   |     Crédito    | TED Recebida | 2428.09 |
+|    1001    |   58248036-1 |   2026-01-19   |     Crédito    |   Depósito   | 4542.53 |
+|    1001    |   58248036-1 |   2026-01-20   |     Crédito    |   Depósito   | 2682.97 |
+|    1001    |   58248036-1 |   2026-02-01   |     Crédito    |   Depósito   | 3444.68 |
 
 
 Limite do cartão
