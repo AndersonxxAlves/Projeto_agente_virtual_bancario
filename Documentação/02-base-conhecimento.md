@@ -109,12 +109,15 @@ Extrato bancário
 
 
 Limite do cartão
-cliente_id,numero_conta,cartao_credito_limite_total,cartao_credito_utilizado,cartao_credito_disponivel,limite_debito_diario,status_cartao
-1001,58248036-1,15800.56,7530.47,8270.09,1369.81,Em análise
+| cliente_id| numero_conta | limite_total | credito_utilizado | credito_disponivel | debito_diario | status_cartao |
+|-----------|--------------|--------------|-------------------|--------------------|---------------|---------------|
+|   1001    |  58248036-1  |   15800.56   |      7530.47      |       8270.09      |    1369.81    |   Em análise  |
+
 
 Saldo bancário
-cliente_id,nome_cliente,cpf,agencia,numero_conta,tipo_conta,saldo,status_conta,data_atualizacao
-1001,João Pereira,466.273.789-65,5316,58248036-1,Conta Corrente,5727.63,Bloqueada,2026-02-06
+| cliente_id | nome_cliente |    cpf     | agencia | numero_conta | tipo_conta | saldo | status_conta | data_atualizacao |
+|------------|--------------|------------|---------|--------------|------------|-------|--------------|------------------|
+|    1001    | João Pereira |466.273.789-65|  5316 |  58248036-1  |Conta Corrente|5727.63| Bloqueada  |    2026-02-06    |
 
 Segunda via de boleto
 {
