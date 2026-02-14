@@ -112,6 +112,8 @@ Extrato bancário
 
 
 Limite do cartão
+cliente_id,numero_conta,cartao_credito_limite_total,cartao_credito_utilizado,cartao_credito_disponivel,limite_debito_diario,status_cartao
+1001,58248036-1,15800.56,7530.47,8270.09,1369.81,Em análise
 
 Saldo bancário
 
