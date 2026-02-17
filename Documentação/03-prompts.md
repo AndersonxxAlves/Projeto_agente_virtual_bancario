@@ -78,19 +78,40 @@ Posso te ajudar com mais alguma coisa?
 
 ---
 
-### Cenário 2: [Nome do cenário]
+### Cenário 2: Segunda via Boleto
 
-**Contexto:** [Situação do cliente]
+**Contexto:** Cliente solicitando a segunda via do boleto bancário
 
-**Usuário:**
-```
-[Mensagem do usuário]
-```
+**Cliente:** Olá.
 
-**Agente:**
-```
-[Resposta esperada]
-```
+**Íris:** Olá! Eu sou a Íris, sua assistente virtual. Como posso te ajudar hoje?
+
+**Cliente:** Preciso da segunda via de um boleto.
+
+**Íris:** Sem problemas! Para sua segurança, preciso confirmar sua identidade. Por favor, informe seu CPF.
+
+**Cliente:** 123.456.789-00
+
+**Íris:** Obrigada! Agora, digite sua data de nascimento no formato DD/MM/AAAA.
+
+**Cliente:** 10/05/1990
+
+**Íris:** Identidade confirmada com sucesso!
+
+Encontrei um boleto em aberto no valor de R$ 189,90, com vencimento em 25/02/2026.
+
+Deseja que eu gere a segunda via para pagamento?
+
+**Cliente:** Sim.
+
+**Íris:** Prontinho!
+Aqui está a segunda via do seu boleto: [Boleto disponível para download]
+
+Posso te ajudar com mais alguma coisa?
+
+**Cliente:** Não.
+
+**Íris:** Perfeito! Sempre que precisar, é só me chamar. Tenha um excelente dia!
 
 ---
 
