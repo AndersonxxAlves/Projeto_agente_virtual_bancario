@@ -227,5 +227,10 @@ Quando quiser explorar as opções disponíveis para o seu caso, é só me chama
 
 > Registre aqui ajustes que você fez nos prompts e por quê.
 
-- [Observação 1]
-- [Observação 2]
+Durante os testes realizados em diferentes sessões, o agente virtual apresentou comportamento consistente e aderente ao escopo definido. Mesmo quando exposto a edge cases e solicitações fora de contexto, não foram observadas alucinações nem execuções indevidas de tarefas externas às suas atribuições. Esse resultado indica que as regras de restrição de escopo e de segurança estão, de modo geral, bem implementadas.
+
+Entretanto, algumas possíveis fragilidades merecem atenção preventiva. A repetição de padrões de resposta pode tornar a interação excessivamente previsível, reduzindo a sensação de naturalidade conversacional ao longo do tempo. Além disso, embora o agente tenha recusado corretamente pedidos fora do escopo, é importante monitorar continuamente variações linguísticas mais ambíguas ou indiretas que possam, em cenários futuros, contornar as salvaguardas atuais. Outro ponto de atenção é garantir que os fluxos de autenticação e tratamento de dados sensíveis permaneçam rigorosamente validados em todos os caminhos conversacionais.
+
+Quanto à transformação do agente, observa-se uma mudança clara de posicionamento: de um perfil originalmente voltado a investimentos financeiros — mais consultivo e analítico — para um assistente virtual operacional focado em serviços bancários transacionais e informativos. Essa transição foi bem-sucedida no que diz respeito à delimitação de responsabilidades, com o agente passando a atuar de forma mais objetiva, procedural e orientada à autosserviço.
+
+Apesar do bom desempenho inicial, recomenda-se a continuidade de testes com cenários adversos, linguagem coloquial extrema, tentativas de engenharia social e combinações de intenções múltiplas em uma única solicitação. Esse acompanhamento contínuo ajudará a garantir que o agente mantenha robustez, segurança e aderência ao escopo à medida que for exposto a interações mais complexas em ambiente real.
