@@ -10,7 +10,7 @@
 | `limites_cartoes.csv` | CSV | Após a autenticação do cliente, o sistema exibe informações como limite total, limite disponível, valor já utilizado e, no caso do débito, o saldo da conta vinculada. Essa verificação ajuda o cliente a planejar melhor seus gastos e evitar recusas em transações. |
 | `segunda_via_boletos.json` | JSON | Após a autenticação do cliente, o sistema localiza e disponibiliza a segunda via do boleto solicitado. Em seguida, são exibidas informações como valor atualizado, data de vencimento, código de barras ou linha digitável e status do pagamento. Essa visualização permite que o cliente realize o pagamento corretamente e evite encargos por atraso. |
 | `saldos_bancarios.csv` | CSV | Após a autenticação do cliente, o sistema consulta e exibe os saldos das contas vinculadas. Em seguida, são apresentadas informações como saldo disponível, saldo bloqueado (se houver) e limite do cheque especial. Essa visualização ajuda o cliente a acompanhar sua posição financeira e planejar melhor suas movimentações. |
-> [!TIP]
+
 
 
 ---
