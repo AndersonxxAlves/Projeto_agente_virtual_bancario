@@ -28,41 +28,44 @@ Houve uma mudança importante no foco e na finalidade dos dados utilizados pelo 
 ### Como os dados são carregados?
 O agente virtual inicia seu funcionamento carregando as informações necessárias a partir dos arquivos de dados do sistema. Primeiro, ele lê os arquivos no formato JSON para obter informações estruturadas, como status de cartões e dados de empréstimos. Em seguida, ele carrega os arquivos CSV, que contêm tabelas como extratos, limites e saldos bancários.
 
-```import json
-import pandas as pd
+```
+class BancoDados:
+    def __init__(self, pasta_dados=None):
 
-# --- Carregamento dos arquivos JSON ---
+        base_dir = Path(__file__).resolve().parent
 
-with open("bloqueio_cartoes.json", "r", encoding="utf-8") as f:
-    bloqueio_cartoes = json.load(f)
+        if pasta_dados:
+            self.pasta = Path(pasta_dados).resolve()
+        else:
+            self.pasta = base_dir
+            if (base_dir / "data").exists():
+                self.pasta = base_dir / "data"
 
-with open("emprestimos.json", "r", encoding="utf-8") as f:
-    emprestimos = json.load(f)
+        print(f"Carregando arquivos de: {self.pasta}")
+        self._carregar_dados()
 
-# --- Carregamento dos arquivos CSV ---
+    def _carregar_dados(self):
 
-extrato_bancario = pd.read_csv("extrato_bancario.csv")
-limites_cartoes = pd.read_csv("limites_cartoes.csv")
-saldos_bancarios = pd.read_csv("saldos_bancarios.csv")
+        def carregar_csv(nome):
+            caminho = self.pasta / nome
+            if caminho.exists():
+                return pd.read_csv(caminho)
+            return pd.DataFrame()
 
-# --- Exemplo de uso pelo agente virtual ---
+        def carregar_json(nome):
+            caminho = self.pasta / nome
+            if caminho.exists():
+                with open(caminho, encoding="utf-8") as f:
+                    return pd.DataFrame(json.load(f))
+            return pd.DataFrame()
 
-print("Dados carregados com sucesso!\n")
+        self.saldos = carregar_csv("saldos_bancarios_ficticios.csv")
+        self.extrato = carregar_csv("extrato_bancario_ficticio.csv")
+        self.limites = carregar_csv("limites_cartoes_ficticios.csv")
+        self.emprestimos = carregar_json("emprestimos_ficticios.json")
+        self.bloqueios = carregar_json("bloqueio_cartoes_ficticios.json")
+        self.boletos = carregar_json("segunda_via_boletos_ficticios.json")
 
-print("Bloqueio de cartões:")
-print(bloqueio_cartoes)
-
-print("\nEmpréstimos:")
-print(emprestimos)
-
-print("\nExtrato bancário (primeiras linhas):")
-print(extrato_bancario.head())
-
-print("\nLimites de cartões (primeiras linhas):")
-print(limites_cartoes.head())
-
-print("\nSaldos bancários (primeiras linhas):")
-print(saldos_bancarios.head())
 ``` 
 
 ### Como os dados são usados no prompt?
