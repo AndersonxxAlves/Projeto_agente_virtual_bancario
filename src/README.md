@@ -1,4 +1,4 @@
-# Código da Aplicação
+# Etapas da execução
 
 Esta pasta contém o código do seu agente financeiro.
 
@@ -6,17 +6,15 @@ Esta pasta contém o código do seu agente financeiro.
 
 ```
 src/
-├── app.py              # Aplicação principal (Streamlit/Gradio)
-├── agente.py           # Lógica do agente
-├── config.py           # Configurações (API keys, etc.)
-└── requirements.txt    # Dependências
+├── projeto_agente_virtual_bancario.py              # Aplicação principal (Streamlit/Gradio)
+
 ```
 
 ## Exemplo de requirements.txt
 
 ```
 streamlit
-openai
+huggingface_hub 
 python-dotenv
 ```
 
@@ -27,5 +25,5 @@ python-dotenv
 pip install -r requirements.txt
 
 # Rodar a aplicação
-streamlit run app.py
+streamlit run projeto_agente_virtual_bancario.py
 ```
