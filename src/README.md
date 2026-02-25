@@ -5,7 +5,10 @@
 
 No terminal do VS Code:
 
+´´´
 pip install pandas streamlit python-dotenv huggingface_hub
+´´´
+
 🔹 Bibliotecas principais
 
 pandas → leitura de CSV/JSON
