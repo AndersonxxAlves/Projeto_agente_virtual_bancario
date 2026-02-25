@@ -26,25 +26,43 @@ A avaliação pode ser feita de duas formas complementares:
 
 Crie testes simples para validar seu agente:
 
-### Teste 1: Consulta de gastos
-- **Pergunta:** "Quanto gastei com alimentação?"
-- **Resposta esperada:** Valor baseado no `transacoes.csv`
-- **Resultado:** [ ] Correto  [ ] Incorreto
+### Teste 1: Consulta de saldo
+- **Pergunta:** "Gostaria de saber meu saldo"
+- **Resposta esperada:** Seu saldo atual na Conta Corrente (58248-036-1) é de R$ 5.727,63, mas está bloqueado por motivos internos do banco.
+- **Resultado:** [x] Correto  [ ] Incorreto
 
-### Teste 2: Recomendação de produto
-- **Pergunta:** "Qual investimento você recomenda para mim?"
-- **Resposta esperada:** Produto compatível com o perfil do cliente
-- **Resultado:** [ ] Correto  [ ] Incorreto
+### Teste 2: Simulação de empréstimo
+- **Pergunta:** "Gostaria de simular um emprestimo"
+- **Resposta esperada:** Para simular um empréstimo, geralmente são necessários alguns dados básicos, como:
+
+    Valor pretendido (em R$);
+    Prazo (em meses/anos);
+    Finalidade (ex.: consórcio, veículo, capital de giro, etc.);
+    Se é cliente do banco (caso não seja, posso orientar sobre os requisitos).
+
+- **Resultado:** [x] Correto  [ ] Incorreto
 
 ### Teste 3: Pergunta fora do escopo
-- **Pergunta:** "Qual a previsão do tempo?"
-- **Resposta esperada:** Agente informa que só trata de finanças
-- **Resultado:** [ ] Correto  [ ] Incorreto
+- **Pergunta:** "Me fale, qual é o melhor trajeto para eu ir no shopping?"
+- **Resposta esperada:** Olá! Eu sou a Íris, sua agente virtual bancária, e meu objetivo é ajudar com informações relacionadas aos serviços do banco.
+
+Para orientações sobre trajetos ou deslocamentos no shopping, recomendo que você utilize aplicativos de navegação como Google Maps ou Waze, que fornecem rotas em tempo real com base no seu local atual e no destino.
+- **Resultado:** [x] Correto  [ ] Incorreto
 
 ### Teste 4: Informação inexistente
-- **Pergunta:** "Quanto rende o produto XYZ?"
-- **Resposta esperada:** Agente admite não ter essa informação
-- **Resultado:** [ ] Correto  [ ] Incorreto
+- **Pergunta:** "Eu quero comprar Bitcoins."
+- **Resposta esperada:** Olá! Eu sou a Íris, sua agente virtual bancária.
+
+Para comprar Bitcoins, você precisa usar uma corretora de criptoativos autorizada e regulamentada pelo Banco Central do Brasil (Bacen). Nosso banco não oferece diretamente a compra de Bitcoins ou outras criptomoedas, mas podemos te ajudar a encontrar opções seguras e disponíveis no Brasil.
+
+Aqui estão algumas corretoras confiáveis e regulamentadas:
+
+    Mercado Bitcoin (www.mercadobitcoin.com.br)
+    FoxBit (www.foxbit.com.br)
+    Binance (www.binance.com) (verifique se está regulamentada no Brasil)
+    Coinbase (www.coinbase.com) (opção internacional, mas com suporte para brasileiros)
+
+- **Resultado:** [x] Correto  [ ] Incorreto
 
 ---
 
@@ -53,10 +71,22 @@ Crie testes simples para validar seu agente:
 Após os testes, registre suas conclusões:
 
 **O que funcionou bem:**
-- [Liste aqui]
+
+Os testes realizados demonstraram um bom nível de maturidade em aspectos essenciais de um assistente bancário digital.
+- Proteção de dados sensíveis
+- Respeito a boas práticas de segurança
+- Não assumiu funcionalidades que não possui
+- Indicou alternativas externas
+- Incluiu alertas de risco e tributação
+- Evitou aconselhamento financeiro personalizado
 
 **O que pode melhorar:**
-- [Liste aqui]
+- Implementar encerramento real da sessão autenticada.
+- Limpar o estado do usuário após o comando “deslogar”.
+- Confirmar explicitamente o logout para o cliente.
+- Retornar o agente para o modo não autenticado.
+- Revisar ortografia e gramática das respostas.
+- Garantir consistência em nomes de produtos (Conta Poupança, Cartão etc.).
 
 ---
 
