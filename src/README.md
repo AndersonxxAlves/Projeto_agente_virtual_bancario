@@ -3,109 +3,109 @@
 
 ## 1. Instalar as bibliotecas
 
-No terminal do VS Code:
+**No terminal do VS Code:**
 
-´´´
-pip install pandas streamlit python-dotenv huggingface_hub
-´´´
+```pip install pandas streamlit python-dotenv huggingface_hub```
 
-🔹 Bibliotecas principais
+**Bibliotecas principais**
 
-pandas → leitura de CSV/JSON
+- pandas → leitura de CSV/JSON
 
-streamlit → interface web do chat
+- streamlit → interface web do chat
 
-python-dotenv → leitura do token no .env
+- python-dotenv → leitura do token no .env
 
-huggingface_hub → conexão com o modelo de IA
+- huggingface_hub → conexão com o modelo de IA
 
 ## 2. Configurar o token da Hugging Face
 
-Crie um arquivo .env na raiz:
+**Crie um arquivo .env na raiz:**
 
-HUGGINGFACEHUB_API_TOKEN=seu_token_aqui
+```HUGGINGFACEHUB_API_TOKEN=seu_token_aqui```
 
-O código usa:
-
+**O código usa:**
+```
 load_dotenv()
+
 hf_token = os.getenv("HUGGINGFACEHUB_API_TOKEN")
+```
 
 Isso autentica o acesso ao modelo.
 
 ## 3. Entender as partes principais do código
-Classe BancoDados
+**Classe** ```BancoDados``` 
 
-Responsável por:
+**Responsável por:**
 
-carregar CSV/JSON
+- carregar CSV/JSON
 
-filtrar por cliente_id
+- filtrar por cliente_id
 
-fornecer dados do cliente
+- fornecer dados do cliente
 
-Métodos principais:
+**Métodos principais:**
 
-obter_saldo
+- obter_saldo
 
-obter_extrato
+- obter_extrato
 
-obter_limites_cartao
+- obter_limites_cartao
 
-obter_emprestimos
+- obter_emprestimos
 
-🤖 Classe AssistenteBancario
+**Classe** ```AssistenteBancario```
 
-Função principal:
+**Função principal:**
 
-gerar_contexto_cliente(cliente_id)
+```gerar_contexto_cliente(cliente_id)```
 
-👉 Monta o contexto do cliente para enviar ao LLM.
+Monta o contexto do cliente para enviar ao LLM.
 
-🧠 Função perguntar
+**Função** ```perguntar```
 
-Responsável por:
+**Responsável por:**
 
-montar o prompt
+- montar o prompt
 
-enviar ao modelo
+- enviar ao modelo
 
-retornar a resposta
+- retornar a resposta
 
-É o coração da IA.
 
-💬 Streamlit
+**Streamlit**
 
-Controla:
+**Controla:**
 
-interface do chat
+- interface do chat
 
-autenticação simples
+- autenticação simples
 
-histórico da conversa
+- histórico da conversa
 
 ## 4. Executar o projeto
 
-No terminal:
+**No terminal:**
 
-streamlit run nome_do_arquivo.py
+```streamlit run nome_do_arquivo.py```
 
-Exemplo:
+**Exemplo:**
 
-streamlit run app.py
+```streamlit run app.py```
 
-Depois abra no navegador:
+**Depois abra no navegador:**
 
-http://localhost:8501
+```http://localhost:8501```
+
 ## 5. Fluxo de funcionamento
 
-O sistema funciona assim:
+**O sistema funciona assim:**
 
-Usuário envia mensagem
+- Usuário envia mensagem
 
-Sistema verifica se precisa login
+- Sistema verifica se precisa login
 
-Se autenticado → gera contexto
+- Se autenticado → gera contexto
 
-Envia pergunta ao modelo
+- Envia pergunta ao modelo
 
-Íris responde no chat
+- Íris responde no chat
